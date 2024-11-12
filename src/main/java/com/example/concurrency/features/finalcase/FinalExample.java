@@ -9,12 +9,12 @@ package com.example.concurrency.features.finalcase;
  * @since 2019-06-13 1:38 PM
  */
 public class FinalExample {
-    private static class Global{
-        private static FinalExample example;
+    public static class Global{
+        public static FinalExample example;
 
     }
-    private final int x;
-    private int y;
+    public final int x;
+    public int y;
     private static FinalExample f;
 //    public FinalExample() {
 //        x = 3;
@@ -28,11 +28,11 @@ public class FinalExample {
         Global.example = this;
     }
 
-    private static void writer() {
+    public static void writer() {
         f = new FinalExample();
     }
 
-    private static void reader() {
+    public static void reader() {
         if (f != null) {
             int i = f.x;
             int j = f.y;
