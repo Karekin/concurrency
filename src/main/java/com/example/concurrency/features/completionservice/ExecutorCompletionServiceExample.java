@@ -10,7 +10,7 @@ import java.util.concurrent.*;
  * 描述:
  * CompletionService BlockingQueue+Executor
  *
- * 批量执行异步任务 并且可以支持Forking Cluster模式即并行查询多个服务其中一个返回则结束
+ * 批量执行异步任务 并且可以支持Forking Cluster模式，即并行查询多个服务其中一个返回则结束
  * @author zed
  * @since 2019-07-03 10:07 AM
  */
